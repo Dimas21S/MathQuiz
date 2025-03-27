@@ -13,14 +13,14 @@ DeQuiz adalah aplikasi kuis matematika berbasis Windows Forms menggunakan C#. Ap
 ## Teknologi yang Digunakan
 - C# dengan Windows Forms
 - Visual Studio
-- .NET Framework
 
 ## Cara Menggunakan
 1. **Jalankan aplikasi** dengan membuka proyek di Visual Studio dan menjalankannya.
 2. **Klik tombol "Start"** untuk memulai kuis.
-3. **Jawab soal yang muncul** dengan mengetikkan jawaban di `textBoxHasil` dan tekan "Enter".
-4. **Dapatkan poin** jika jawaban benar.
-5. **Kuis berakhir** setelah 5 menit atau saat pengguna menghentikan permainan.
+3. **Klik tombol stop** untuk menghentikan permainan sementara.
+4. **Jawab soal yang muncul** dengan mengetikkan jawaban di `textBoxHasil` dan tekan "Enter".
+5. **Poin akan bertambah** jika jawaban benar.
+6. **Kuis berakhir** setelah 5 menit
 
 ## Struktur Kode
 - `Form1.cs`: File utama yang menangani logika permainan.
@@ -33,7 +33,7 @@ DeQuiz adalah aplikasi kuis matematika berbasis Windows Forms menggunakan C#. Ap
 ## Instalasi dan Konfigurasi
 1. Pastikan **Visual Studio** sudah terinstal.
 2. Buka proyek di Visual Studio.
-3. Jalankan aplikasi dengan menekan **F5**.
+3. Jalankan aplikasi dengan menekan tombol running.
 
 ## Catatan Tambahan
 - Aplikasi ini menggunakan `Random` untuk mengacak angka dan operasi.
