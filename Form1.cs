@@ -21,8 +21,6 @@ namespace DeQuiz
         private void buttonStart_Click(object sender, EventArgs e)
         {
             timer1.Enabled = true;
-            nomorQuiz += 1;
-            labelNomorQuiz.Text = nomorQuiz.ToString();
         }
 
         private void buttonStop_Click(object sender, EventArgs e)

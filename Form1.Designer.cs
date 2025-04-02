@@ -220,7 +220,7 @@
             Controls.Add(labelAngka2);
             Controls.Add(labelAngka1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "DeQuiz";
             ResumeLayout(false);
             PerformLayout();
         }
