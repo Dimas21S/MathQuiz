@@ -48,6 +48,7 @@ namespace DeQuiz
 
             labelMinute.Text = menit.ToString("D2");
             labelSeconds.Text = detik.ToString("D2");
+            buttonTryAgain.Visible = true;
         }
 
         private void GenerateQuestion()
@@ -85,6 +86,11 @@ namespace DeQuiz
 
         private void buttonEnter_Click(object sender, EventArgs e)
         {
+            if (!timer1.Enabled)
+            {
+                return;
+            }
+
             if (int.TryParse(textBoxHasil.Text, out jawaban))
             {
                 if (jawaban == hasil)
@@ -93,11 +99,25 @@ namespace DeQuiz
                 }
             }
 
-            nomorQuiz++; 
-            labelNomorQuiz.Text = nomorQuiz.ToString();
+            nomorQuiz++;
+            labelNomorQuiz.Text = nomorQuiz.ToString() + ".";
             labelHasilPoint.Text = poin.ToString();
             textBoxHasil.Clear();
             GenerateQuestion();
+        }
+
+        private void textBoxHasil_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                buttonEnter.PerformClick();
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void buttonTryAgain_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
