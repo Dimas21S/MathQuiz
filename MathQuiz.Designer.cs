@@ -1,6 +1,6 @@
 ﻿namespace DeQuiz
 {
-    partial class Form1
+    partial class MathQuiz
     {
         /// <summary>
         ///  Required designer variable.
@@ -203,9 +203,9 @@
             // 
             // buttonTryAgain
             // 
-            buttonTryAgain.Location = new Point(498, 303);
+            buttonTryAgain.Location = new Point(498, 299);
             buttonTryAgain.Name = "buttonTryAgain";
-            buttonTryAgain.Size = new Size(103, 39);
+            buttonTryAgain.Size = new Size(117, 43);
             buttonTryAgain.TabIndex = 16;
             buttonTryAgain.Text = "Coba Lagi";
             buttonTryAgain.UseVisualStyleBackColor = true;
