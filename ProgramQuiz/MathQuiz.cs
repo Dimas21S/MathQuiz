@@ -1,3 +1,5 @@
+using DeQuiz.ProgramQuiz;
+
 namespace DeQuiz
 {
     public partial class MathQuiz : Form
@@ -12,6 +14,7 @@ namespace DeQuiz
         {
             InitializeComponent();
             quiz = new Quiz();
+            time = new Time();
         }
 
         private void buttonStart_Click(object sender, EventArgs e)
@@ -42,8 +45,8 @@ namespace DeQuiz
                 }
             }
 
-            labelMinute.Text = menit.ToString("D2");
-            labelSeconds.Text = detik.ToString("D2");
+            labelMinute.Text = time.Menit.ToString("D2");
+            labelSeconds.Text = time.Detik.ToString("D2");
         }
 
         private void buttonEnter_Click(object sender, EventArgs e)

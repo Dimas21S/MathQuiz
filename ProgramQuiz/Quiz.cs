@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DeQuiz
+namespace DeQuiz.ProgramQuiz
 {
     public class Quiz
     {
@@ -22,12 +22,12 @@ namespace DeQuiz
 
         public Quiz(int angkaPertama, int angkaKedua, string operation, int hasil, int poin, int nomorQuiz)
         {
-            this.AngkaPertama = angkaPertama;
-            this.AngkaKedua = angkaKedua;
-            this.Operation = operation;
-            this.Hasil = hasil;
-            this.Poin = poin;
-            this.NomorQuiz = nomorQuiz;
+            AngkaPertama = angkaPertama;
+            AngkaKedua = angkaKedua;
+            Operation = operation;
+            Hasil = hasil;
+            Poin = poin;
+            NomorQuiz = nomorQuiz;
         }
 
         public void GenerateQuestion()
