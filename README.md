@@ -3,7 +3,7 @@
 ## Deskripsi
 DeQuiz adalah aplikasi kuis matematika berbasis Windows Forms menggunakan C#. Aplikasi ini memberikan soal matematika sederhana dengan operasi penjumlahan, pengurangan, perkalian, dan pembagian. Pengguna akan mendapatkan poin setiap kali menjawab dengan benar, dan permainan akan berhenti setelah waktu habis.
 
-🎮 Tampilan Aplikasi
+## Tampilan Aplikasi
 Berikut adalah antarmuka dari aplikasi DeQuiz:
 ![Screenshot 2025-04-07 233541](https://github.com/user-attachments/assets/a0e0c606-6073-4c45-b69a-041307972379)
 ![Screenshot 2025-04-07 233847](https://github.com/user-attachments/assets/903616cd-26ec-4c3e-8688-ae804e4e90b6)
