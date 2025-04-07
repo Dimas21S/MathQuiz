@@ -6,6 +6,7 @@ namespace DeQuiz
         int menit;
         int detik;
         Quiz quiz;
+        Time time;
 
         public MathQuiz()
         {
@@ -27,16 +28,10 @@ namespace DeQuiz
         {
             if (timer1.Enabled)
             {
-                detik++;
-
-                if (detik == 60)
-                {
-                    detik = 0;
-                    menit++;
-                }
+                time.TimeStart();
             }
 
-            if (menit == 5)
+            if (time.IsTimeUp())
             {
                 timer1.Enabled = false;
                 buttonTryAgain.Visible = true;
@@ -84,8 +79,7 @@ namespace DeQuiz
         private void buttonTryAgain_Click(object sender, EventArgs e)
         {
             quiz.Reset();
-            menit = 0;
-            detik = 0;
+            time.Reset();
 
             labelHasilPoint.Text = quiz.Poin.ToString("D3");
             labelNomorQuiz.Text = quiz.NomorQuiz.ToString() + ".";
