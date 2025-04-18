@@ -46,52 +46,60 @@
             labelTime = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
             buttonTryAgain = new Button();
+            textBoxNama = new TextBox();
+            labelNama = new Label();
+            buttonLihatData = new Button();
             SuspendLayout();
             // 
             // labelAngka1
             // 
             labelAngka1.AutoSize = true;
-            labelAngka1.Font = new Font("Bookman Old Style", 25.8000011F);
+            labelAngka1.Font = new Font("Bookman Old Style", 25.8000011F, FontStyle.Bold);
+            labelAngka1.ForeColor = SystemColors.ButtonHighlight;
             labelAngka1.Location = new Point(237, 167);
             labelAngka1.Name = "labelAngka1";
-            labelAngka1.Size = new Size(46, 52);
+            labelAngka1.Size = new Size(51, 52);
             labelAngka1.TabIndex = 0;
             labelAngka1.Text = "?";
             // 
             // labelAngka2
             // 
             labelAngka2.AutoSize = true;
-            labelAngka2.Font = new Font("Bookman Old Style", 25.8000011F);
+            labelAngka2.Font = new Font("Bookman Old Style", 25.8000011F, FontStyle.Bold);
+            labelAngka2.ForeColor = SystemColors.ButtonHighlight;
             labelAngka2.Location = new Point(374, 168);
             labelAngka2.Name = "labelAngka2";
-            labelAngka2.Size = new Size(46, 52);
+            labelAngka2.Size = new Size(51, 52);
             labelAngka2.TabIndex = 1;
             labelAngka2.Text = "?";
             // 
             // labelOperasi
             // 
             labelOperasi.AutoSize = true;
-            labelOperasi.Font = new Font("Bookman Old Style", 25.8000011F);
+            labelOperasi.Font = new Font("Bookman Old Style", 25.8000011F, FontStyle.Bold);
+            labelOperasi.ForeColor = SystemColors.ButtonHighlight;
             labelOperasi.Location = new Point(315, 167);
             labelOperasi.Name = "labelOperasi";
-            labelOperasi.Size = new Size(40, 52);
+            labelOperasi.Size = new Size(38, 52);
             labelOperasi.TabIndex = 2;
             labelOperasi.Text = "-";
             // 
             // labelNomorQuiz
             // 
             labelNomorQuiz.AutoSize = true;
-            labelNomorQuiz.Font = new Font("Bookman Old Style", 25.8000011F);
+            labelNomorQuiz.Font = new Font("Bookman Old Style", 25.8000011F, FontStyle.Bold);
+            labelNomorQuiz.ForeColor = SystemColors.ButtonHighlight;
             labelNomorQuiz.Location = new Point(128, 168);
             labelNomorQuiz.Name = "labelNomorQuiz";
-            labelNomorQuiz.Size = new Size(94, 52);
+            labelNomorQuiz.Size = new Size(97, 52);
             labelNomorQuiz.TabIndex = 3;
             labelNomorQuiz.Text = "No.";
             // 
             // labelSamaDengan
             // 
             labelSamaDengan.AutoSize = true;
-            labelSamaDengan.Font = new Font("Bookman Old Style", 25.8000011F);
+            labelSamaDengan.Font = new Font("Bookman Old Style", 25.8000011F, FontStyle.Bold);
+            labelSamaDengan.ForeColor = SystemColors.ButtonHighlight;
             labelSamaDengan.Location = new Point(444, 168);
             labelSamaDengan.Name = "labelSamaDengan";
             labelSamaDengan.Size = new Size(48, 52);
@@ -129,9 +137,9 @@
             // 
             // buttonEnter
             // 
-            buttonEnter.Location = new Point(694, 185);
+            buttonEnter.Location = new Point(694, 186);
             buttonEnter.Name = "buttonEnter";
-            buttonEnter.Size = new Size(94, 29);
+            buttonEnter.Size = new Size(96, 28);
             buttonEnter.TabIndex = 8;
             buttonEnter.Text = "Enter";
             buttonEnter.UseVisualStyleBackColor = true;
@@ -140,60 +148,66 @@
             // labelPoint
             // 
             labelPoint.AutoSize = true;
-            labelPoint.Font = new Font("Bookman Old Style", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelPoint.Font = new Font("Bookman Old Style", 18F, FontStyle.Bold);
+            labelPoint.ForeColor = SystemColors.ButtonHighlight;
             labelPoint.Location = new Point(563, 46);
             labelPoint.Name = "labelPoint";
-            labelPoint.Size = new Size(92, 37);
+            labelPoint.Size = new Size(95, 36);
             labelPoint.TabIndex = 9;
             labelPoint.Text = "Poin:";
             // 
             // labelHasilPoint
             // 
             labelHasilPoint.AutoSize = true;
-            labelHasilPoint.Font = new Font("Bookman Old Style", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelHasilPoint.Font = new Font("Bookman Old Style", 18F, FontStyle.Bold);
+            labelHasilPoint.ForeColor = SystemColors.ButtonHighlight;
             labelHasilPoint.Location = new Point(661, 46);
             labelHasilPoint.Name = "labelHasilPoint";
-            labelHasilPoint.Size = new Size(74, 37);
+            labelHasilPoint.Size = new Size(75, 36);
             labelHasilPoint.TabIndex = 10;
             labelHasilPoint.Text = "000";
             // 
             // labelMinute
             // 
             labelMinute.AutoSize = true;
-            labelMinute.Font = new Font("Bookman Old Style", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelMinute.Font = new Font("Bookman Old Style", 18F, FontStyle.Bold);
+            labelMinute.ForeColor = SystemColors.ButtonHighlight;
             labelMinute.Location = new Point(661, 9);
             labelMinute.Name = "labelMinute";
-            labelMinute.Size = new Size(55, 37);
+            labelMinute.Size = new Size(55, 36);
             labelMinute.TabIndex = 13;
             labelMinute.Text = "00";
             // 
             // labelSeconds
             // 
             labelSeconds.AutoSize = true;
-            labelSeconds.Font = new Font("Bookman Old Style", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelSeconds.Font = new Font("Bookman Old Style", 18F, FontStyle.Bold);
+            labelSeconds.ForeColor = SystemColors.ButtonHighlight;
             labelSeconds.Location = new Point(735, 9);
             labelSeconds.Name = "labelSeconds";
-            labelSeconds.Size = new Size(55, 37);
+            labelSeconds.Size = new Size(55, 36);
             labelSeconds.TabIndex = 11;
             labelSeconds.Text = "00";
             // 
             // labelTitikDua
             // 
             labelTitikDua.AutoSize = true;
-            labelTitikDua.Font = new Font("Bookman Old Style", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelTitikDua.Font = new Font("Bookman Old Style", 18F, FontStyle.Bold);
+            labelTitikDua.ForeColor = SystemColors.ButtonHighlight;
             labelTitikDua.Location = new Point(713, 9);
             labelTitikDua.Name = "labelTitikDua";
-            labelTitikDua.Size = new Size(27, 37);
+            labelTitikDua.Size = new Size(25, 36);
             labelTitikDua.TabIndex = 14;
             labelTitikDua.Text = ":";
             // 
             // labelTime
             // 
             labelTime.AutoSize = true;
-            labelTime.Font = new Font("Bookman Old Style", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelTime.Font = new Font("Bookman Old Style", 18F, FontStyle.Bold);
+            labelTime.ForeColor = SystemColors.ButtonHighlight;
             labelTime.Location = new Point(558, 9);
             labelTime.Name = "labelTime";
-            labelTime.Size = new Size(97, 37);
+            labelTime.Size = new Size(104, 36);
             labelTime.TabIndex = 15;
             labelTime.Text = "Time:";
             // 
@@ -203,7 +217,7 @@
             // 
             // buttonTryAgain
             // 
-            buttonTryAgain.Location = new Point(498, 299);
+            buttonTryAgain.Location = new Point(258, 348);
             buttonTryAgain.Name = "buttonTryAgain";
             buttonTryAgain.Size = new Size(117, 43);
             buttonTryAgain.TabIndex = 16;
@@ -212,12 +226,45 @@
             buttonTryAgain.Visible = false;
             buttonTryAgain.Click += buttonTryAgain_Click;
             // 
-            // Form1
+            // textBoxNama
+            // 
+            textBoxNama.Location = new Point(123, 25);
+            textBoxNama.Name = "textBoxNama";
+            textBoxNama.PlaceholderText = "Masukkan Nama...";
+            textBoxNama.Size = new Size(155, 27);
+            textBoxNama.TabIndex = 17;
+            textBoxNama.TextChanged += textBoxNama_TextChanged;
+            // 
+            // labelNama
+            // 
+            labelNama.AutoSize = true;
+            labelNama.Font = new Font("Bookman Old Style", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelNama.ForeColor = SystemColors.ButtonHighlight;
+            labelNama.Location = new Point(12, 19);
+            labelNama.Name = "labelNama";
+            labelNama.Size = new Size(105, 32);
+            labelNama.TabIndex = 18;
+            labelNama.Text = "Nama:";
+            // 
+            // buttonLihatData
+            // 
+            buttonLihatData.Location = new Point(377, 348);
+            buttonLihatData.Name = "buttonLihatData";
+            buttonLihatData.Size = new Size(117, 43);
+            buttonLihatData.TabIndex = 19;
+            buttonLihatData.Text = "Lihat Skor";
+            buttonLihatData.UseVisualStyleBackColor = true;
+            buttonLihatData.Visible = false;
+            // 
+            // MathQuiz
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.Control;
-            ClientSize = new Size(800, 450);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(819, 450);
+            Controls.Add(buttonLihatData);
+            Controls.Add(labelNama);
+            Controls.Add(textBoxNama);
             Controls.Add(buttonTryAgain);
             Controls.Add(labelTime);
             Controls.Add(labelTitikDua);
@@ -234,7 +281,7 @@
             Controls.Add(labelOperasi);
             Controls.Add(labelAngka2);
             Controls.Add(labelAngka1);
-            Name = "Form1";
+            Name = "MathQuiz";
             Text = "DeQuiz";
             ResumeLayout(false);
             PerformLayout();
@@ -259,5 +306,8 @@
         private Label labelTime;
         private System.Windows.Forms.Timer timer1;
         private Button buttonTryAgain;
+        private TextBox textBoxNama;
+        private Label labelNama;
+        private Button buttonLihatData;
     }
 }

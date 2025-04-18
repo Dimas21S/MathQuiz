@@ -1,5 +1,7 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,18 +13,21 @@ namespace DeQuiz.ProgramQuiz
         public int Menit { get; private set; }
         public int Detik { get; private set; }
 
-    public Time(int menit, int detik)
+        protected const String conString = "server=localhost;port=;database=db_quiz;uid=root;pwd=;";
+
+
+        public Time(int menit, int detik)
         {
             Menit = menit;
             Detik = detik;
         }
 
-    public Time()
+        public Time()
         {
 
         }
 
-    public void TimeStart()
+        public void TimeStart()
         {
             Detik++;
 
@@ -33,15 +38,45 @@ namespace DeQuiz.ProgramQuiz
             }
         }
 
-    public bool IsTimeUp()
+        public bool IsTimeUp()
         {
             return Menit == 5;
         }
 
-    public void Reset()
+        public void Reset()
         {
             Menit = 0;
             Detik = 0;
         }
+
+        public int insertDatabase()
+        {
+            int result = 0;
+            MySqlConnection connect = new MySqlConnection(conString);
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO time (Menit, Detik) VALUES(@Menit, @Detik)");
+            cmd.Parameters.AddWithValue("@Menit", Menit);
+            cmd.Parameters.AddWithValue("@Detik", Detik);
+            cmd.CommandType = CommandType.Text;
+            cmd.Connection = connect;
+
+            try
+            {
+                connect.Open();
+                result = cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                if (connect.State == ConnectionState.Open)
+                {
+                    connect.Close();
+                }
+            }
+            return result;
+        }
+
     }
 }
